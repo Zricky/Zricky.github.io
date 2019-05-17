@@ -1899,7 +1899,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff3b0a;
+  background: #05c385;
 }
 .feed-link,
 .chat {
@@ -2153,6 +2153,14 @@ pre .javascript .function {
   50%, 70% {
     transform: scale(1.1);
   }
+}
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: none;
+}
+.gt-container .gt-popup .gt-action.is--active:before {
+  top: 0.7em;
 }
 .local-search-pop-overlay {
   position: fixed;
@@ -3259,7 +3267,6 @@ ul.breadcrumb li+li:last-child {
   position: absolute;
   color: #99a9bf;
   width: 80px;
-  color: #114142;
 }
 .pagination {
   height: 27px;
@@ -3281,16 +3288,16 @@ pre {
 .site-meta {
   padding: 20px 0;
   color: #262a30;
-  background: #edf474;
+  background: #75894a;
 }
 .site-title {
-  color: #000;
+  color: #d1f549;
   font-size: 15px;
 }
 .site-subtitle {
   margin-top: 10px;
   font-size: 14px;
-  color: #000;
+  color: #7eea0b;
 }
 .btn {
   color: #49b1f5;
@@ -3306,18 +3313,18 @@ pre {
   display: none;
 }
 .github-corner > svg {
-  fill: #cc23fc;
-  color: #84e4d3;
+  fill: #75894a;
+  color: #b2c8bb;
   position: absolute;
   top: 0;
   border: 0;
   right: 0;
 }
 .sidebar-inner {
-  background: #ddf4a6;
+  background: #725334;
 }
 .post-block {
-  background: #f4efa9;
+  background: #fff5f7;
 }
 .footer {
   font-size: 18px;
@@ -3328,7 +3335,7 @@ pre {
   text-align: center;
   word-break: break-word;
   font-weight: 400;
-  background-color: #f5f5f5;
+  background-color: #b2c8bb;
   border-radius: 0.3em;
   line-height: 1em;
   padding-bottom: 0.12em;
@@ -3345,4 +3352,40 @@ pre {
 }
 .post-meta-item-icon i {
   color: #f42f2d;
+}
+.site-state-item-name {
+  font-size: 14px;
+  color: #eee;
+}
+.sidebar a,
+.sidebar span.exturl {
+  color: #eee;
+}
+.site-author-name {
+  color: #49f550;
+}
+.site-description {
+  color: #9cf513;
+}
+.links-of-blogroll-title {
+  color: #eee;
+}
+.sidebar-nav .sidebar-nav-active {
+  color: #23fcd6;
+  border-bottom-color: #fce123;
+}
+.post-toc .nav .active-current > a {
+  color: #23fcd6;
+}
+.sidebar-nav li {
+  color: #fce123;
+}
+.post-toc ol a {
+  color: #fce123;
+  border-bottom-color: #23fcd6;
+}
+.nav-text:hover {
+  border-color: #23fcd6;
+  color: #f42f2d;
+  background: #23fcd6;
 }
