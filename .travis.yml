@@ -7,9 +7,8 @@ cache:
     - node_modules
     
 install:
-	- npm install hexo-cli -g
   - npm install
-
+  - npm install hexo-cli -g
 
 script:
   - hexo clean && hexo g
