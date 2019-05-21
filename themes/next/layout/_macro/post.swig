@@ -289,7 +289,7 @@
           <!--noindex-->
           {% if post.summary_img  %}
                       <div class="out-img-topic">
-                        <img src={{ post.summary_img }} class="img-topic">
+                        <img src={{ post.summary_img }} class="img-topic" width="300" height="300">
                       </div>
           {% endif %}
           <!--noindex-->
