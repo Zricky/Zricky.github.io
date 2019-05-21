@@ -1,8 +1,3 @@
-env:
-  global:
-    - GITHUB_TOKEN: 85d9f1e55b752a0bf7679d796b0d7b1d2cbe8e96
-    - GH_REF: github.com:Zricky/Zricky.github.io.git
-
 language: node_js
 node_js: stable
 
