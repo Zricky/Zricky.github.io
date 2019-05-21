@@ -11,7 +11,7 @@ install:
   - npm install hexo-cli -g
 
 script:
-  - hexo clean && hexo g
+  - npm run deploy
 
 after_script:
   - cd ./public
