@@ -1,0 +1,318 @@
+// Custom styles.
+// Custom styles.
+
+//文章内链接文本样式
+.post-body p a{
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+  &:hover {
+    color: #fc6423;
+    border-bottom: none;
+    border-bottom: 1px solid #fc6423;
+  }
+}
+
+// 修改选中字符的颜色
+/* webkit, opera, IE9 */
+::selection {
+  background: #00c4b6;
+  color: #f7f7f7;
+}
+/* firefox */
+::-moz-selection {
+  background: #00c4b6;
+  color: #f7f7f7;
+}
+//::selection {
+//  background: #8959a8;
+//  color: #f7f7f7;
+//}
+///* firefox */
+//::-moz-selection {
+//  background: #00c4b6;
+//  color: #f7f7f7;
+//}
+
+//文章目录默认展开
+.post-toc .nav { display: block; }
+//目录字体大小调整
+.post-toc ol {
+  font-size : 15px;
+}
+
+//page code background-color
+.code ::selection {
+  background: #a2dc30;
+  color: #fff;
+}
+
+
+//gitalk code background-color
+.gt-container .gt-comment-content .highlight pre, .markdown-body pre{
+  background-color: #2d2d2d;
+}
+.gt-container .gt-comment-content .highlight ::selection {
+  background: #2593a6;
+  color: #fff;
+}
+
+//添加背景图片
+@media screen and (min-width:1200px) {
+
+  body {
+    background-image:url(/images/b-g.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+  }
+
+  #footer a {
+    color:#eee;
+  }
+}
+
+//添加代码：
+.headband {display:none;}
+//保存刷新发现黑边没有了。
+
+// 鼠标移动至文章标题时的效果
+.posts-expand .post-title-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #49b1f5;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+//以下是归档样式修改
+.archive .post-time{
+  position: absolute;
+  color: #fff;
+  background-color: #49b1f5;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 2px;
+}
+
+.page-archive .archive-page-counter{
+  font-size: 20px;
+  background-color: #49b1f5;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+
+.archive a.post-title-link:before{
+  top: 10px;
+  width: 16px;
+  height: 16px;
+
+  content: "\f073";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 16px;
+  line-height: 16px;
+
+}
+
+.archive a.post-title-link{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.archive .post{
+  position: relative;
+  margin-bottom: 1rem;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.archive .post-title{
+  display: block;
+  margin-left: 5rem;
+  color: #4c4948;
+  text-decoration: none;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.archive .post-header{
+  position: relative;
+  margin-bottom: 1rem;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+
+}
+.archive .post-title-link{
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.archive .post-meta{
+  position: absolute;
+  color: #99a9bf;
+  width: 80px;
+}
+//以上是归档样式修改
+
+//以下是页码样式修改
+.pagination{
+  height: 27px;
+}
+
+.pagination .page-number.current{
+  background-color: #49b1f5;
+  border-radius: 5px;
+}
+//以上是页码样式修改
+
+// 以下修改``代码块自定义样式
+// Custom styles.
+code {
+  color: #ff7600;
+  background: #fbf7f8;
+  margin: 2px;
+}
+.highlight, code, pre {
+  border: 1px solid #d6d6d6;
+}
+
+// 修改网站头部颜色
+//.headband {
+//  height: 3px;
+//  background: #84e4d3;
+//}
+.site-meta {
+  padding: 20px 0;
+  color: #262a30;
+  background: #75894A;
+}
+.site-title {
+  color: #d1f549;
+  font-size: 15px;
+
+}
+.site-subtitle {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #7eea0b;
+}
+
+// 修改按键（button）样式
+.btn {
+  color: #49b1f5;
+  background: #fff;
+  border: 2px solid #49b1f5;
+}
+// 按键（button）点击时样式
+.btn:hover {
+  border-color: #49b1f5;
+  color: #fff;
+  background: #49b1f5;
+}
+
+// 以上修改``代码块自定义样式
+// 鼠标样式
+//
+//:active {
+//  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"),auto!important
+//}
+.back-to-top {display:none;}
+
+.github-corner > svg {
+  fill: #75894A;
+  color: #B2C8BB;
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+
+.sidebar-inner {
+  background: #725334;
+}
+.post-block {
+  background: #FFF5F7;
+}
+.footer {
+  font-size: 18px;
+  color: #060606;
+}
+/*添加下面的CSS代码来修改博文标题样式*/
+.page-post-detail .post-title {
+  font-size: 26px;
+  text-align: center;
+  word-break: break-word;
+  font-weight: $posts-expand-title-font-weight
+  background-color: #B2C8BB;
+  border-radius:.3em;
+  line-height:1em;
+  padding-bottom:.12em;
+  padding-top:.12em;
+  box-shadow:2px 2px 7px #9fb6cd;
+  +mobile() {
+    font-size: 22px;
+  }
+}
+.posts-expand .post-title-link {
+  color: #fc6423;
+}
+.post-meta-item-icon i {
+  color: #f42f2d;
+}
+.site-state-item-name {
+  font-size: 14px;
+  color: #eee;
+}
+.sidebar a, .sidebar span.exturl {
+  color:  #eee;
+}
+.site-author-name {
+  color: #49f550;
+}
+.site-description {
+  color: #9cf513;
+}
+.links-of-blogroll-title {
+  color:  #eee;
+}
+.sidebar-nav .sidebar-nav-active {
+  color: #23fcd6;
+  border-bottom-color: #fce123;
+}
+.post-toc .nav .active-current > a {
+  color: #23fcd6;
+}
+.sidebar-nav li {
+  color: #fce123;
+}
+.post-toc ol a {
+  color: #fce123;
+  border-bottom-color: #23fcd6;
+}
+.nav-text:hover {
+  border-color: #23fcd6;
+  color: #f42f2d;
+  background: #23fcd6;
+}
