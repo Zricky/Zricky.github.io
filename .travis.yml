@@ -1,8 +1,10 @@
 language: node_js
 node_js: stable
-#cache:
-#  directories:
-#    - node_modules
+
+cache:
+  directories:
+    - node_modules
+
 #before_install:
 ##  - openssl aes-256-cbc -K $encrypted_2dd5ddff7fe3_key -iv $encrypted_2dd5ddff7fe3_iv
 ##    -in id_rsa.enc -out  ~/.ssh/id_rsa  -d
@@ -38,7 +40,5 @@ after_script:
 branches:
   only:
     - hexo
-env:
-  global:
-    - GH_REF: github.com/Zricky/Zricky.github.io.git
+
 
