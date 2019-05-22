@@ -39,6 +39,6 @@ deploy:
     branch: master
 branches:
   only:
-#    - hexo
     - master
+#    - hexo
 
