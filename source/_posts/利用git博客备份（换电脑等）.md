@@ -5,11 +5,9 @@ description: 博客备份 以及换电脑编辑 博文
 tags:
   - git
   - hexo
-  - hexo备份
 categories:
   - git
-  - hexo
-  - hexo备份
+  - blog
 date: 2019-05-17 14:10:01
 updated: 2019-05-17 14:10:01
 summary_img: https://avatars0.githubusercontent.com/u/29839337
