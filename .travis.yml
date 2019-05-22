@@ -13,8 +13,8 @@ before_install:
 ##  - eval $(ssh-agent)
 ##  - ssh-add ~/.ssh/id_rsa
 #  # 配置 git 替换为自己的信息
-  - git config user.name "Zricky"
-  - git config user.email "zjxshushi@gmail.com"
+#  - git config user.name "Zricky"
+#  - git config user.email "zjxshushi@gmail.com"
 
 install:
   - npm install
@@ -35,7 +35,7 @@ deploy:
   skip_cleanup: true
   local-dir: public
   github_token: ${GITHUB_TOKEN}  # Set in the settings page of your repository, as a secure variable
-  keep_history: false
+  repo: git@github.com:Zricky/Zricky.github.io.git
   on:
     branch: master
 branches:
