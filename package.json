@@ -16,7 +16,7 @@
     "sync": "yuque-hexo sync",
     "clean:yuque": "yuque-hexo clean",
     "dg": "npm run sync && hexo clean && hexo g -d",
-    "deploy": "npm run sync && hexo clean && hexo g ",
+    "deploy": "npm run clean:yuque && npm run sync && hexo clean && hexo g ",
     "dev": "hexo clean && hexo server"
   },
   "dependencies": {
