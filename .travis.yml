@@ -22,22 +22,23 @@ install:
 script:
 #  - hexo clean& hexo g
   - npm run deploy
-after_script:
-  - cd  public
-  - git init
-  - git config user.name "Zricky"
-  - git config user.email "zjxshushi@gmail.com"
-  - git add --all
-  - git commit -m "更新博文"
-  - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:master
-#deploy:
-#  provider: pages
-#  skip_cleanup: true
-#  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-#  keep_history: true
-#  on:
-#    branch: master
+#after_script:
+#  - cd  public
+#  - git init
+#  - git config user.name "Zricky"
+#  - git config user.email "zjxshushi@gmail.com"
+#  - git add --all
+#  - git commit -m "更新博文"
+#  - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:master
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: ${GITHUB_TOKEN}  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
 branches:
   only:
     - hexo
+    - master
 
