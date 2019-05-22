@@ -31,14 +31,14 @@ after_script:
   - git commit -m "更新博文"
   - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:master
 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  local-dir: public
-  github_token: ${GITHUB_TOKEN}  # Set in the settings page of your repository, as a secure variable
-  repo: git@github.com:Zricky/Zricky.github.io.git
-  on:
-    branch: master
+#deploy:
+#  provider: pages
+#  skip_cleanup: true
+#  local-dir: public
+#  github_token: ${GITHUB_TOKEN}  # Set in the settings page of your repository, as a secure variable
+#  repo: git@github.com:Zricky/Zricky.github.io.git
+#  on:
+#    branch: master
 branches:
   only:
     - hexo
