@@ -6,7 +6,6 @@ tags:
   - git
   - hexo
 categories:
-  - git
   - blog
 date: 2019-05-17 14:10:01
 updated: 2019-05-17 14:10:01
