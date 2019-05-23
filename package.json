@@ -13,10 +13,11 @@
     "postPath": "source/_posts/yuque"
   },
   "scripts": {
+    "yuque": "npm install https://github.com/Zricky/yuque-hexo/tarball/master",
     "sync": "yuque-hexo sync",
     "clean:yuque": "yuque-hexo clean",
     "dg": "npm run sync && hexo clean && hexo g -d",
-    "deploy": "npm run clean:yuque && npm run sync && hexo clean && hexo g ",
+    "deploy": "npm run yuque && npm run clean:yuque && npm run sync && hexo clean && hexo g ",
     "dev": "hexo clean && hexo server"
   },
   "dependencies": {
@@ -33,9 +34,7 @@
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3",
-    "live2d-widget-model-z16": "^1.0.5"
-  },
-  "devDependencies": {
-    "yuque-hexo": "^1.6.0"
+    "live2d-widget-model-z16": "^1.0.5",
+    "yuque-hexo": "https://github.com/Zricky/yuque-hexo/tarball/master"
   }
 }
