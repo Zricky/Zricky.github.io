@@ -1,7 +1,7 @@
 {
   "list": [
     {
-      "arr": {
+      "2018": {
         "link": [
           "timer/2018/IMG_2104.JPG",
           "timer/2018/IMG_2603.JPG",
@@ -19,11 +19,10 @@
           "timer/2018/IMG_4169.JPG"
         ],
         "text": "在成都 听演唱会 跨年",
-        "year": 2018
       }
     },
     {
-      "arr": {
+      "2019": {
         "link": [
           "timer/2018/IMG_2104.JPG",
           "timer/2018/IMG_2603.JPG",
@@ -35,7 +34,6 @@
           "timer/2018/IMG_4103.JPG"
         ],
         "text": "五一在长沙",
-        "year": 2019
       }
     }
   ]
